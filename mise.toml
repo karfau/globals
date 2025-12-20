@@ -19,7 +19,8 @@ git status
 pnpm i
 ls node_modules/.bin
 if [[ -f ~/.bashrc ]] && ! grep "$PWD/alias" ~/.bashrc; then
-    echo ". $PWD/alias" >> ~/.bashrc
-    echo "restart the terminal!"
+    echo "to add node_modules/.bin to your PATH and add alises run"
+    echo 'echo ". $PWD/alias" >> ~/.bashrc'
+    echo "and restart the terminal!"
 fi
 '''
