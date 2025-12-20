@@ -1,5 +1,5 @@
-SFW_BIN_PATH="$(realpath $(dirname "${BASH_SOURCE[0]}"))/node_modules/bin"
-if command -v $SFW_BIN_PATH/swf; then
+SFW_BIN_PATH="$(realpath $(dirname "${BASH_SOURCE[0]}"))/node_modules/.bin"
+if [[ -f "$SFW_BIN_PATH/sfw" && -x "$SFW_BIN_PATH/sfw" ]]; then
     echo "adding $SFW_BIN_PATH to PATH and aliases for npm,pnpm,yarn,uv,pip,cargo"
     export PATH="$SFW_BIN_PATH:$PATH"
     # https://docs.socket.dev/docs/socket-firewall-free
@@ -9,5 +9,5 @@ if command -v $SFW_BIN_PATH/swf; then
     alias uv="sfw uv"
     alias pip="sfw pip"
 else
-    echo "not adding $SFW_BIN_PATH to PATH, swf binary missing"
+    echo "not adding $SFW_BIN_PATH to PATH, sfw binary missing"
 fi

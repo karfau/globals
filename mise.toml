@@ -7,6 +7,19 @@ min_version = "2025.11.3"
 node = "24"
 pnpm = "10.26.0"
 
+[settings]
+# This must be enabled to make the hooks work
+experimental = true
 
-[env]
-_.path = ['{{config_root}}/node_modules/.bin']
+[hooks]
+enter = '''
+set -x
+git fetch
+git status
+pnpm i
+ls node_modules/.bin
+if [[ -f ~/.bashrc ]] && ! grep "$PWD/alias" ~/.bashrc; then
+    echo ". $PWD/alias" >> ~/.bashrc
+    echo "restart the terminal!"
+fi
+'''
