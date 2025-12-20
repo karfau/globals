@@ -5,9 +5,10 @@ Using a repo to configure and regularly update "global" npm packages.
 ## What it does
 
 1. Installs the following packages (locally):
-   - [`sfw`](https://npmjs.com/package/sfw) aka [Socker Firewall Free](https://docs.socket.dev/docs/socket-firewall-free)
-     Be aware of the current limitations:
+   - [`sfw`](https://npmjs.com/package/sfw) aka [Socker Firewall Free](https://docs.socket.dev/docs/socket-firewall-free)\
+     ***Be aware of the current limitations/impact:***
      - no private registries are supported!
+     - automatically downloads the latest executable binary as part of running the aliased commands
      - https://github.com/SocketDev/sfw-free/issues
 
 2. Adds `node_modules/.bin` to your PATH
