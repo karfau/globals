@@ -14,8 +14,7 @@ experimental = true
 [hooks]
 enter = '''
 set -x
-git fetch
-git status
+git pull || (git fetch; git status)
 pnpm i
 ls node_modules/.bin
 if [[ -f ~/.bashrc ]] && ! grep "$PWD/alias" ~/.bashrc; then
