@@ -9,6 +9,7 @@ Using a repo to configure and regularly update "global" npm packages.
      ***Be aware of the current limitations/impact:***
      - no private registries are supported!
      - automatically downloads the latest executable binary as part of running the aliased commands
+     - prints a warning when an aliased command doesn't fetch any packages
      - https://github.com/SocketDev/sfw-free/issues
 
 2. Adds `node_modules/.bin` to your PATH
