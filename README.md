@@ -1,18 +1,19 @@
 # Globals
 
-Using a repo to configure and regularly update global npm packages
+Using a repo to configure and regularly update "global" npm packages.
 
 ## What it does
 
 1. Installs the following packages (locally):
-- [sfw](https://npmjs.com/package/sfw) aka [Socker Firewall Free](https://docs.socket.dev/docs/socket-firewall-free)
-  Be aware of the current limitations:
-  - no private registries are supported!
-  - https://github.com/SocketDev/sfw-free/issues
+   - [`sfw`](https://npmjs.com/package/sfw) aka [Socker Firewall Free](https://docs.socket.dev/docs/socket-firewall-free)
+     Be aware of the current limitations:
+     - no private registries are supported!
+     - https://github.com/SocketDev/sfw-free/issues
 
 2. Adds `node_modules/.bin` to your PATH
 3. If the dependencies are installed when a shell is started,
    prefixes the following binaries with `sfw`: `npm`, `pnpm`, `yarn`, `pip`, `uv`, `cargo`
+   (reminds you about what it does and whether it does it by printing one line, see [alias](alias))
 
 ## Usage
 
