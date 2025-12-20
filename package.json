@@ -1,0 +1,8 @@
+{
+	"scripts": {
+		"preinstall": "git pull"
+	},
+	"dependencies": {
+		"sfw": "^2.0.4"
+	}
+}

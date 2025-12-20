@@ -1,0 +1,30 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      sfw:
+        specifier: ^2.0.4
+        version: 2.0.4
+
+packages:
+
+  sfw@2.0.4:
+    resolution: {integrity: sha512-F0CrB/50dXU8gO7r85hjtpkdYs1rs3WDwp2g/eUDFV8c2GbyouMSJNajoBJiyNzQWCBE/3SSKdk77NPbBjDIag==}
+    engines: {node: '>=20'}
+    hasBin: true
+    bundledDependencies:
+      - proper-lockfile
+      - graceful-fs
+      - retry
+      - signal-exit
+      - yocto-spinner
+
+snapshots:
+
+  sfw@2.0.4: {}

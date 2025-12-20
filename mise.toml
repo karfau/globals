@@ -1,0 +1,12 @@
+min_version = "2025.11.3"
+
+# Sources:
+# - https://mise.jdx.dev/mise-cookbook/nodejs.html
+
+[tools]
+node = "24"
+pnpm = "10.26.0"
+
+
+[env]
+_.path = ['{{config_root}}/node_modules/.bin']
