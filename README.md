@@ -6,6 +6,9 @@ Using a repo to configure and regularly update global npm packages
 
 1. Installs the following packages (locally):
 - [sfw](https://npmjs.com/package/sfw) aka [Socker Firewall Free](https://docs.socket.dev/docs/socket-firewall-free)
+  Be aware of the current limitations:
+  - no private registries are supported!
+  - https://github.com/SocketDev/sfw-free/issues
 
 2. Adds `node_modules/.bin` to your PATH
 3. If the dependencies are installed when a shell is started,
@@ -24,4 +27,4 @@ Using a repo to configure and regularly update global npm packages
    ```
 5. restart your terminal(s) for the changes ot take effect
 6. you are notified about dependency updates in the repo,
-`cd`ing into this directory pulls the updates, updates the dependencies.
+   `cd`ing into this directory pulls the updates, updates the dependencies.
