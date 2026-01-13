@@ -4,7 +4,7 @@ min_version = "2025.11.3"
 # - https://mise.jdx.dev/mise-cookbook/nodejs.html
 
 [tools]
-node = "24.12.0"
+node = "24.13.0"
 pnpm = "10.28.0"
 
 [settings]
